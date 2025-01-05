@@ -122,6 +122,12 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@1.*/da
 	       ]
 	    }
     ]);
-
+   const save_data = {
+        type: jsPsychPipe,
+  	action: "save",
+  	experiment_id: "QtGIglkLcbIb",
+  	filename: filename,
+  	data_string: ()=>jsPsych.data.get().csv()
+    };
     return API.script;
 });
