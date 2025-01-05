@@ -4,7 +4,16 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@1.*/da
 
     API.setName('mgr');
     API.addSettings('skip',true);
-	init_data_pipe(API, 'QtGIglkLcbIb',  {file_type:'csv'});	
+	init_data_pipe(API, 'QtGIglkLcbIb', {
+    file_type: 'csv',
+    onSuccess: function(response) {
+        console.log('Data successfully saved to OSF:', response);
+    },
+    onFailure: function(error) {
+        console.log('Error saving data to OSF:', error);
+    }
+});
+	
 
 
     API.addTasksSet({
