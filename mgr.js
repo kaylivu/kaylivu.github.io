@@ -28,11 +28,6 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@1.*/da
             name: 'hispanic',
             scriptUrl: 'hispanic.js'
         }],
-	questions: [{
-            type: 'quest',
-            name: 'questions',
-            scriptUrl: 'questions.js'
-        }]
 });
 
     });
@@ -54,9 +49,6 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@1.*/da
 	                    },
 	                ]
 	            }
-                    {
-                    	inherit: 'questions'  // Add this line to include the questions task
-                    }
 	       ]
 	    }
     ]);
