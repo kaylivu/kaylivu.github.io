@@ -54,6 +54,9 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@1.*/da
 	                    },
 	                ]
 	            }
+                    {
+                    	inherit: 'questions'  // Add this line to include the questions task
+                    }
 	       ]
 	    }
     ]);
